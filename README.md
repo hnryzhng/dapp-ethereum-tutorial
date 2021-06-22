@@ -153,9 +153,13 @@ todoList.tasks(1) // access an item in 'tasks' mapping with key '1'
 
 ## Developing with Truffle on Front-End 
 
-0. Web3.JS connects front-end client side with blockchain, while MetaMask is Chrome plugin that connects browser to blockchain. A) Connect Ganache blockchain account to MetaMask (if not done already): Get private key from an account in Ganache, then "Import Account" in MetaMask by pasting private key. Connect Web3 to Ganache blockchain account: see loadAccount method in App.js.
+0. Connecting to blockchain: Web3.JS connects front-end client side with blockchain, while MetaMask is Chrome plugin that connects browser to blockchain. 
+- Connect Ganache blockchain account to MetaMask (if not done already): Get private key from an account in Ganache, then "Import Account" in MetaMask by pasting private key. 
+- Connect Web3 to Ganache blockchain account: see loadAccount method in App.js.
+
+1. Run front-end application 
 ```
-$ npm run dev // runs front-end application on lite-server as defined in package.json
+$ npm run dev // runs on lite-server as defined in package.json
 ```
 
 1. Create bs-config.json file to tell lite-server where to serve client-side files
