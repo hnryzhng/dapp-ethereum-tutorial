@@ -157,12 +157,12 @@ todoList.tasks(1) // access an item in 'tasks' mapping with key '1'
 - Connect Ganache blockchain account to MetaMask (if not done already): Get private key from an account in Ganache, then "Import Account" in MetaMask by pasting private key. 
 - Connect Web3 to Ganache blockchain account: see loadAccount method in App.js.
 
-1. Run front-end application 
+1. To run front-end application 
 ```
 $ npm run dev // runs on lite-server as defined in package.json
 ```
 
-1. Create bs-config.json file to tell lite-server where to serve client-side files
+2. Create bs-config.json file to tell lite-server where to serve client-side files
 ```
 // bs-config.json
 {
@@ -178,9 +178,9 @@ $ npm run dev // runs on lite-server as defined in package.json
 }
 ```
 
-2. Create "index.html" file (example: refer to index.html for TodoList here)
+3. Create "index.html" file (example: refer to index.html for TodoList here)
 
-3. Create "app.js" file (example w/ comments: refer to app.js for TodoList here; step-by-step (vid explanation here at 40:25)[https://www.youtube.com/watch?t=40m25s&v=rzvk2kdjr2I&feature=youtu.be]). Great example of structuring native JS code with a sprinkle of jQuery.
+4. Create "app.js" file (example w/ comments: refer to app.js for TodoList here; step-by-step (vid explanation here at 40:25)[https://www.youtube.com/watch?t=40m25s&v=rzvk2kdjr2I&feature=youtu.be]). Great example of structuring native JS code with a sprinkle of jQuery.
 
 
 
