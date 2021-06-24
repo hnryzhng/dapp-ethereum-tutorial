@@ -68,6 +68,8 @@ App = {
         // Create JavaScript representation of smart contract for front-end manipulation
         const todoList = await $.getJSON('TodoList.json');  // loads smart contract TodoList from JSON in build dir 
 
+        // If I want to load already deployed contract on blockchain, must know contract's account address
+
         App.contracts.TodoList = TruffleContract(todoList); // stores the contracts from particular user account as Truffle object for further processing and interaction in contracts attribute
         App.contracts.TodoList.setProvider(window.ethereum); // updated: sets Ethereum Web3 as provider so we can access smart contract and its methods on blockchain
         App.todoList = await App.contracts.TodoList.deployed(); // get deployed live copy of contract with data
@@ -101,6 +103,7 @@ App = {
         await App.todoList.createTask(content, { from: App.account[0] })  // calls createTask for deployed smart contract, { from } param is particular to how MetaMask operates, found answer on SO
 
         window.location.reload()    // refreshes page to load updated tasks list
+        App.load()
     },
 
     renderTasks: async() => {
