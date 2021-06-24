@@ -68,6 +68,7 @@ App = {
         // Create JavaScript representation of smart contract for front-end manipulation
         const todoList = await $.getJSON('TodoList.json');  // loads smart contract TodoList from JSON in build dir 
 
+
         // If I want to load already deployed contract on blockchain, must know contract's account address
 
         App.contracts.TodoList = TruffleContract(todoList); // stores the contracts from particular user account as Truffle object for further processing and interaction in contracts attribute
