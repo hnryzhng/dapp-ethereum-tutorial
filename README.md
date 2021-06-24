@@ -179,8 +179,15 @@ $ npm run dev // runs on lite-server as defined in package.json
 ```
 
 3. Create "index.html" file (example: refer to index.html for TodoList here)
+a. Add Web3 library to front-end browser in index.html footer
+```
+Using CDN: <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+
+Other installation options: https://github.com/ChainSafe/web3.js#readme
+```
 
 4. Create "app.js" file (example w/ comments: refer to app.js for TodoList here; step-by-step (vid explanation here at 40:25)[https://www.youtube.com/watch?t=40m25s&v=rzvk2kdjr2I&feature=youtu.be]). Great example of structuring native JS code with a sprinkle of jQuery.
+- Also check in comments of app.js for "updated" to see where I've changed deprecated code
 
 
 
